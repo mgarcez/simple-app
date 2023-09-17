@@ -14,7 +14,6 @@ public class SimpleAppController {
 
     @PostMapping("/endpoint")
     public ResponseEntity<Object> handleRequest(@RequestBody Map<String, Object> requestData) throws InterruptedException {
-        //Thread.sleep(500000);
         // Process the request data
         return ResponseEntity.ok(requestData);
     }
